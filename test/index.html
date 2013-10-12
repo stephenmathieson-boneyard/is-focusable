@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>is-focusable tests</title>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.min.css">
+		<script src="/build/build.js"></script>
+    <script>mocha.setup('bdd')</script>
+	</head>
+	<body>
+		<div id="mocha"></div>
+
+		<div id="fixture">
+			<a tabindex="-1">a</a>
+			<a href="#">d</a>
+			<a class="no">b</a>
+			<a class="no" tabindex="lol">c</a>
+
+			<input>
+			<input tabindex="500">
+			<input class="no" disabled="true">
+			<input class="no" type="hidden">
+
+			<select>
+				<option>you can focus me</option>
+			</select>
+			<select class="no" disabled="true">
+				<option>you cant focus me</option>
+			</select>
+			<select tabindex="500"></select>
+
+			<button></button>
+			<button class="no" disabled="true">c</button>
+			<button tabindex="100">a</button>
+
+			<textarea></textarea>
+			<textarea class="no" disabled="true"></textarea>
+			<textarea tabindex="400"></textarea>
+
+			<div class="no">div</div>
+			<div tabindex="200">div</div>
+		</div>
+
+ 		<script src="/test/is-focusable.js"></script>
+    <script>(this.mochaPhantomJS || this.mocha).run()</script>
+	</body>
+</html>

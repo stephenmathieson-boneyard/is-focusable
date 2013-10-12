@@ -1,0 +1,17 @@
+{
+  "name": "is-focusable",
+  "repo": "stephenmathieson/is-focusable",
+  "description": "Check if the given element can receive focus",
+  "version": "0.0.0",
+  "keywords": [ "focus", "focusable" ],
+  "dependencies": {},
+  "development": {
+    "stephenmathieson/descendants": "*",
+    "component/assert": "*"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
