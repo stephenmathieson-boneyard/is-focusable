@@ -2,7 +2,7 @@
   "name": "is-focusable",
   "repo": "stephenmathieson/is-focusable",
   "description": "Check if the given element can receive focus",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "keywords": [ "focus", "focusable" ],
   "dependencies": {},
   "development": {
